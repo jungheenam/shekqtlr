@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{570A8999-4A43-4962-B6B9-2C7DBBD77DA1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>HJHDirectX</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassHeader.h" />
+    <ClInclude Include="Dx.h" />
+    <ClInclude Include="DxCamera.h" />
+    <ClInclude Include="DxFont.h" />
+    <ClInclude Include="DxGrid.h" />
+    <ClInclude Include="DxLight.h" />
+    <ClInclude Include="DxTypedef.h" />
+    <ClInclude Include="DxUtility.h" />
+    <ClInclude Include="GameNode.h" />
+    <ClInclude Include="HJHDirectX.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="MacroFunction.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="P00_AllocateHierarchy.h" />
+    <ClInclude Include="P00_MultiAnimationScene.h" />
+    <ClInclude Include="P00_MultiAnimationUnit.h" />
+    <ClInclude Include="P00_SkinnedMesh.h" />
+    <ClInclude Include="P00_SkinnedMeshInstance.h" />
+    <ClInclude Include="P00_SkinnedMeshPure.h" />
+    <ClInclude Include="P00_TestAlphaTexture.h" />
+    <ClInclude Include="P00_TestMesh.h" />
+    <ClInclude Include="P00_TestMeshData.h" />
+    <ClInclude Include="P00_TestScene.h" />
+    <ClInclude Include="P00_TestShaderBase.h" />
+    <ClInclude Include="P00_TestShaderMapping.h" />
+    <ClInclude Include="P00_TestShaderText.h" />
+    <ClInclude Include="P00_TestSkinning.h" />
+    <ClInclude Include="P00_TestSplatting.h" />
+    <ClInclude Include="P00_TestXFile.h" />
+    <ClInclude Include="P00_TestXFileInstance.h" />
+    <ClInclude Include="P00_TestXFilePure.h" />
+    <ClInclude Include="P00_TestXFileScene.h" />
+    <ClInclude Include="P01_LoadingScene.h" />
+    <ClInclude Include="P01_StartMenuScene.h" />
+    <ClInclude Include="P02_ItemBase.h" />
+    <ClInclude Include="P02_Loading.h" />
+    <ClInclude Include="P02_PlayerStat.h" />
+    <ClInclude Include="P02_Progressbar.h" />
+    <ClInclude Include="P02_UIButton.h" />
+    <ClInclude Include="P02_UIButtonScene.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SingletonBase.h" />
+    <ClInclude Include="SingletonHeader.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dx.cpp" />
+    <ClCompile Include="DxCamera.cpp" />
+    <ClCompile Include="DxFont.cpp" />
+    <ClCompile Include="DxGrid.cpp" />
+    <ClCompile Include="DxLight.cpp" />
+    <ClCompile Include="GameNode.cpp" />
+    <ClCompile Include="HJHDirectX.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="P00_AllocateHierarchy.cpp" />
+    <ClCompile Include="P00_MultiAnimationScene.cpp" />
+    <ClCompile Include="P00_MultiAnimationUnit.cpp" />
+    <ClCompile Include="P00_SkinnedMesh.cpp" />
+    <ClCompile Include="P00_SkinnedMeshInstance.cpp" />
+    <ClCompile Include="P00_SkinnedMeshPure.cpp" />
+    <ClCompile Include="P00_TestAlphaTexture.cpp" />
+    <ClCompile Include="P00_TestMesh.cpp" />
+    <ClCompile Include="P00_TestMeshData.cpp" />
+    <ClCompile Include="P00_TestScene.cpp" />
+    <ClCompile Include="P00_TestShaderBase.cpp" />
+    <ClCompile Include="P00_TestShaderMapping.cpp" />
+    <ClCompile Include="P00_TestShaderText.cpp" />
+    <ClCompile Include="P00_TestSkinning.cpp" />
+    <ClCompile Include="P00_TestSplatting.cpp" />
+    <ClCompile Include="P00_TestXFile.cpp" />
+    <ClCompile Include="P00_TestXFileInstance.cpp" />
+    <ClCompile Include="P00_TestXFilePure.cpp" />
+    <ClCompile Include="P00_TestXFileScene.cpp" />
+    <ClCompile Include="P01_LoadingScene.cpp" />
+    <ClCompile Include="P01_StartMenuScene.cpp" />
+    <ClCompile Include="P02_ItemBase.cpp" />
+    <ClCompile Include="P02_Loading.cpp" />
+    <ClCompile Include="P02_PlayerStat.cpp" />
+    <ClCompile Include="P02_Progressbar.cpp" />
+    <ClCompile Include="P02_UIButton.cpp" />
+    <ClCompile Include="P02_UIButtonScene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HJHDirectX.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="HJHDirectX.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
