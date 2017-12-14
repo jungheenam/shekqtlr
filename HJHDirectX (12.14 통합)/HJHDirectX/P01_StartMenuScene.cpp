@@ -88,7 +88,7 @@ void P01_StartMenuScene::ChageMaptoolScene()
 
 void P01_StartMenuScene::ChageDungeonScene()
 {
-	SCENEM->Change(_T("P02_UIButtonScene"));
+	SCENEM->Change(_T("P02_ItemBase"));
 }
 
 

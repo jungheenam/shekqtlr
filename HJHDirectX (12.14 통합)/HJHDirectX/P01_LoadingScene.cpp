@@ -79,24 +79,6 @@ void P01_LoadingScene::LoadTexture()
 	//=================================인벤=======================================
 
 
-	loading->LoadTexture(_T("playerUI"), _T("Texture/P01_Inventory/playerUI.png"));
-
-	loading->LoadTexture(_T("slot0"), _T("Texture/P01_Inventory/slot0.png"));
-	loading->LoadTexture(_T("slot1"), _T("Texture/P01_Inventory/slot1.png"));
-	loading->LoadTexture(_T("slot2"), _T("Texture/P01_Inventory/slot2.png"));
-	loading->LoadTexture(_T("slot3"), _T("Texture/P01_Inventory/slot3.png"));
-	loading->LoadTexture(_T("slot4"), _T("Texture/P01_Inventory/slot4.png"));
-	loading->LoadTexture(_T("slot5"), _T("Texture/P01_Inventory/slot5.png"));
-	loading->LoadTexture(_T("slot6"), _T("Texture/P01_Inventory/slot6.png"));
-	loading->LoadTexture(_T("slot7"), _T("Texture/P01_Inventory/slot7.png"));
-	loading->LoadTexture(_T("slot8"), _T("Texture/P01_Inventory/slot8.png"));
-	loading->LoadTexture(_T("slot9"), _T("Texture/P01_Inventory/slot9.png"));
-	loading->LoadTexture(_T("slot10"), _T("Texture/P01_Inventory/slot10.png"));
-	loading->LoadTexture(_T("slot11"), _T("Texture/P01_Inventory/slot11.png"));
-	loading->LoadTexture(_T("slot12"), _T("Texture/P01_Inventory/slot12.png"));
-	loading->LoadTexture(_T("slot13"), _T("Texture/P01_Inventory/slot13.png"));
-	loading->LoadTexture(_T("slot14"), _T("Texture/P01_Inventory/slot14.png"));
-
 
 
 	//=================================아이템=======================================
