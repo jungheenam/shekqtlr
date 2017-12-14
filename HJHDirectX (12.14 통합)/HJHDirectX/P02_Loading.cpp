@@ -36,8 +36,14 @@ P02_Loading::~P02_Loading()
 
 HRESULT P02_Loading::Init()
 {
+	RECT rc = { 0,0,1920,1080 };
+	VEC3 pos = VEC3(0, 0, 0);
+	VEC2 scale = VEC2(WINSIZEX / 1920.0f, WINSIZEY / 1080.0f);
+
 	bar = new P02_Progressbar;
-	bar->Init(_T("Texture/P02_UI/LoadingBarTop"), _T( "Texture/P02_UI/LoadingBarBottom" ) , VEC3( WINSIZEX/2 , WINSIZEY - 100  , 0 ) , VEC2( 242 , 50 ) );
+	bar->Init(_T("Texture/P02_UI/LoadingBarTop"), _T( "Texture/P02_UI/LoadingBarBottom" ) , VEC3( WINSIZEX/2-430 , WINSIZEY - 70  , 0 ) , VEC2( 242 , 50 ) );
+
+	
 	currentGauge = 0;
 	bar->SetGauge( 0 , 0 );
 

@@ -18,31 +18,32 @@ HRESULT P02_Progressbar::Init( VEC3 _position , VEC2 _size )
 
 	rc = RectMake( _position.x , _position.y , _size.x , _size.y );
 
-	textureTop = TEXTUREM->Add( _T( "topbar" ) , _T( "Texture/P02_UI/mainButton01.png" ) , D3DX_FILTER_NONE );
-	textureBottom = TEXTUREM->Add( _T( "topbar" ) , _T( "Texture/P02_UI/mainButton02.png" ) , D3DX_FILTER_NONE );
+	textureTop = TEXTUREM->Add( _T( "topbar" ) , _T( "Texture/P02_UITest/mainButton01.png" ) , D3DX_FILTER_NONE );
+	textureBottom = TEXTUREM->Add( _T( "topbar" ) , _T( "Texture/P02_UITest/mainButton02.png" ) , D3DX_FILTER_NONE );
 
 	width = textureBottom->getImageInfo()->fW;
 
 	return S_OK;
 }
 
-HRESULT P02_Progressbar::Init( TCHAR * _toptexture , TCHAR * _bottom , VEC3 _position , VEC2 _size )
+HRESULT P02_Progressbar::Init( TCHAR * _toptexture , TCHAR * _bottom , VEC3 _position , VEC2 _size)
 {
 	pos.x = _position.x;
 	pos.y = _position.y;
-	scale = { 1.0f , 1.0f };
 
 	rc = RectMake( _position.x , _position.y , _size.x , _size.y );
 
 	TCHAR topTex[ 128 ];
 	TCHAR bottmTex[ 128 ];
-	textureTop = TEXTUREM->Add( _toptexture , topTex );
-	textureBottom = TEXTUREM->Add( _bottom , bottmTex );
+
 	ZeroMemory( topTex , sizeof( topTex ) );
 	ZeroMemory( bottmTex , sizeof( bottmTex ) );
 
 	_stprintf( topTex , _T( "%s.png" ) , _toptexture );
 	_stprintf( bottmTex , _T( "%s.png" ) , _bottom );
+
+	textureTop = TEXTUREM->Add( _toptexture , topTex );
+	textureBottom = TEXTUREM->Add( _bottom , bottmTex );
 
 	width = textureBottom->getImageInfo()->fW;
 
@@ -61,7 +62,7 @@ void P02_Progressbar::Update()
 
 void P02_Progressbar::Render()
 {
-	RECT TopImgSize		= { 0, 0,width,50 };
+	RECT TopImgSize		= { 0, 0, width,50 };
 	RECT BottomImgSize	= { 0, 0, textureBottom->getImageInfo()->fW , 50 };
 
 	textureBottom->Render( &BottomImgSize , &pos );

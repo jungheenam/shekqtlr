@@ -185,7 +185,6 @@
     <ClInclude Include="P02_Progressbar.h" />
     <ClInclude Include="P02_UIButton.h" />
     <ClInclude Include="P02_UIButtonScene.h" />
-    <ClInclude Include="P02_UISroll.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SingletonBase.h" />
@@ -233,7 +232,6 @@
     <ClCompile Include="P02_Progressbar.cpp" />
     <ClCompile Include="P02_UIButton.cpp" />
     <ClCompile Include="P02_UIButtonScene.cpp" />
-    <ClCompile Include="P02_UISroll.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

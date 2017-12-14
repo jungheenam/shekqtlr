@@ -1,7 +1,9 @@
 #pragma once
 
-class P02_UIObject;
+//class P02_UIObject;
 class P00_SkinedMeshPure;
+class P02_UIButtonScene;
+
 class P01_StartMenuScene :public GameNode
 
 {
@@ -11,11 +13,13 @@ private:
 	P00_SkinnedMeshPure* player;
 	P00_SkinnedMeshPure* background;
 	P00_SkinnedMeshPure* cpy;
-	//vector<P00_SkinnedMeshPure*> _vZealot;
+
 
 	MAT _mWorld;
 
-
+	P02_UIButton* changeBttn1;
+	P02_UIButton* changeBttn2;
+	P02_UIButton* exitBttn;
 
 public:
 	P01_StartMenuScene();
@@ -24,5 +28,7 @@ public:
 	void Release();
 	void Update();
 	void Render();
+	static void ChageMaptoolScene();
+	static void ChageDungeonScene();
 };
 

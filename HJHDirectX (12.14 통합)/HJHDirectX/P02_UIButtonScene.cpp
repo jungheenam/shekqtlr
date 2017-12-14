@@ -26,7 +26,7 @@ HRESULT P02_UIButtonScene::Init()
 	button2->Init( false , VEC3( WINSIZEX / 2 , WINSIZEY / 2 + 100 , 0 ) , VEC2( 242 , 50 ) , VEC2( 1.0f , 1.0f ) , _T( "¤²2" ) );
 
 
-
+	
 	CHARUI->Init();
 	ITEM->Init();
 	INVEN->Init();

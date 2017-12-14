@@ -4,7 +4,6 @@ class P02_Progressbar : public GameNode
 private:
 	RECT rc;
 	VEC3 pos;
-	VEC2 scale;
 	float width;
 
 	Texture* textureTop;
