@@ -47,146 +47,146 @@ void P02_ItemBase::SetItemInfo()
 
 	tagItem helmat;
 	helmat.itemKind = ITEMKIND_HELMAT;
-	helmat.texture = TEXTUREM->Find( _T( "helmat" ) );
-	helmat.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 100 , 0 );
-	helmat.rcSize = VEC2( 34 , 34 );
+	helmat.texture = TEXTUREM->Find(_T("helmat"));
+	helmat.rcPosition = VEC3(WINSIZEX / 2, WINSIZEY / 2 - 100, 0);
+	helmat.rcSize = VEC2(34, 34);
 	helmat.isPicked = false;
 	helmat.CON = 10;
 	helmat.DEX = 10;
 
-	vItem.push_back( helmat );
+	vItem.push_back(helmat);
 
 	tagItem neck;
 	neck.itemKind = ITEMKIND_NECK;
-	neck.texture = TEXTUREM->Find( _T( "neck" ) );
-	neck.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 150 , 0 );
-	neck.rcSize = VEC2( 34 , 34 );
+	neck.texture = TEXTUREM->Find(_T("neck"));
+	neck.rcPosition = VEC3(WINSIZEX / 2, WINSIZEY / 2 - 150, 0);
+	neck.rcSize = VEC2(34, 34);
 	neck.isPicked = false;
 	neck.CON = 10;
 	neck.DEX = 10;
 
-	vItem.push_back( neck );
+	vItem.push_back(neck);
 
 	tagItem shoulder;
 	shoulder.itemKind = ITEMKIND_SHOULDER;
-	shoulder.texture = TEXTUREM->Find( _T( "shoulder" ) );
-	shoulder.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 200 , 0 );
-	shoulder.rcSize = VEC2( 34 , 34 );
+	shoulder.texture = TEXTUREM->Find(_T("shoulder"));
+	shoulder.rcPosition = VEC3(WINSIZEX / 2, WINSIZEY / 2 - 200, 0);
+	shoulder.rcSize = VEC2(34, 34);
 	shoulder.isPicked = false;
 	shoulder.CON = 10;
 	shoulder.DEX = 10;
 
-	vItem.push_back( shoulder );
+	vItem.push_back(shoulder);
 
 	tagItem cape;
 	cape.itemKind = ITEMKIND_CAPE;
-	cape.texture = TEXTUREM->Find( _T( "cape" ) );
-	cape.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 250 , 0 );
-	cape.rcSize = VEC2( 34 , 34 );
+	cape.texture = TEXTUREM->Find(_T("cape"));
+	cape.rcPosition = VEC3(WINSIZEX / 2, WINSIZEY / 2 - 250, 0);
+	cape.rcSize = VEC2(34, 34);
 	cape.isPicked = false;
 	cape.CON = 10;
 	cape.DEX = 10;
 
-	vItem.push_back( cape );
+	vItem.push_back(cape);
 
 	tagItem body;
 	body.itemKind = ITEMKIND_BODY;
-	body.texture = TEXTUREM->Find( _T( "body" ) );
-	body.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 300 , 0 );
-	body.rcSize = VEC2( 34 , 34 );
+	body.texture = TEXTUREM->Find(_T("body"));
+	body.rcPosition = VEC3(WINSIZEX / 2, WINSIZEY / 2 - 300, 0);
+	body.rcSize = VEC2(34, 34);
 	body.isPicked = false;
 	body.CON = 10;
 	body.DEX = 10;
 
-	vItem.push_back( body );
+	vItem.push_back(body);
 
 	tagItem wirst;
 	wirst.itemKind = ITEMKIND_WRIST;
-	wirst.texture = TEXTUREM->Find( _T( "wirst" ) );
-	wirst.rcPosition = VEC3( WINSIZEX / 2 + 100 , WINSIZEY / 2 , 0 );
-	wirst.rcSize = VEC2( 34 , 34 );
+	wirst.texture = TEXTUREM->Find(_T("wirst"));
+	wirst.rcPosition = VEC3(WINSIZEX / 2 + 100, WINSIZEY / 2, 0);
+	wirst.rcSize = VEC2(34, 34);
 	wirst.isPicked = false;
 	wirst.CON = 10;
 	wirst.DEX = 10;
 
-	vItem.push_back( wirst );
+	vItem.push_back(wirst);
 
 	tagItem hand;
 	hand.itemKind = ITEMKIND_HAND;
-	hand.texture = TEXTUREM->Find( _T( "hand" ) );
-	hand.rcPosition = VEC3( WINSIZEX / 2 + 150 , WINSIZEY / 2 , 0 );
-	hand.rcSize = VEC2( 34 , 34 );
+	hand.texture = TEXTUREM->Find(_T("hand"));
+	hand.rcPosition = VEC3(WINSIZEX / 2 + 150, WINSIZEY / 2, 0);
+	hand.rcSize = VEC2(34, 34);
 	hand.isPicked = false;
 	hand.CON = 10;
 	hand.DEX = 10;
 
-	vItem.push_back( hand );
+	vItem.push_back(hand);
 
 	tagItem belt;
 	belt.itemKind = ITEMKIND_BELT;
-	belt.texture= TEXTUREM->Find( _T( "belt" ) );
-	belt.rcPosition = VEC3( WINSIZEX / 2 + 200 , WINSIZEY / 2 , 0 );
-	belt.rcSize = VEC2( 34 , 34 );
+	belt.texture = TEXTUREM->Find(_T("belt"));
+	belt.rcPosition = VEC3(WINSIZEX / 2 + 200, WINSIZEY / 2, 0);
+	belt.rcSize = VEC2(34, 34);
 	belt.isPicked = false;
 	belt.CON = 10;
 	belt.DEX = 10;
 
-	vItem.push_back( belt );
+	vItem.push_back(belt);
 
 
 	tagItem pants;
 	pants.itemKind = ITEMKIND_PANTS;
-	pants.texture = TEXTUREM->Find( _T( "pants" ) );
-	pants.rcPosition = VEC3( WINSIZEX / 2 + 250 , WINSIZEY / 2 , 0 );
-	pants.rcSize = VEC2( 34 , 34 );
+	pants.texture = TEXTUREM->Find(_T("pants"));
+	pants.rcPosition = VEC3(WINSIZEX / 2 + 250, WINSIZEY / 2, 0);
+	pants.rcSize = VEC2(34, 34);
 	pants.isPicked = false;
 	pants.CON = 10;
 	pants.DEX = 10;
 
-	vItem.push_back( pants );
+	vItem.push_back(pants);
 
 	tagItem shose;
 	shose.itemKind = ITEMKIND_SHOSE;
-	shose.texture= TEXTUREM->Find( _T( "shose" ) );
-	shose.rcPosition = VEC3( WINSIZEX / 2 + 300 , WINSIZEY / 2 , 0 );
-	shose.rcSize = VEC2( 34 , 34 );
+	shose.texture = TEXTUREM->Find(_T("shose"));
+	shose.rcPosition = VEC3(WINSIZEX / 2 + 300, WINSIZEY / 2, 0);
+	shose.rcSize = VEC2(34, 34);
 	shose.isPicked = false;
 	shose.CON = 10;
 	shose.DEX = 10;
 
-	vItem.push_back( shose );
+	vItem.push_back(shose);
 
 	tagItem ring;
 	ring.itemKind = ITEMKIND_RING;
-	ring.texture= TEXTUREM->Find( _T( "ring" ) );
-	ring.rcPosition = VEC3( WINSIZEX / 2 + 350 , WINSIZEY / 2 , 0 );
-	ring.rcSize = VEC2( 34 , 34 );
+	ring.texture = TEXTUREM->Find(_T("ring"));
+	ring.rcPosition = VEC3(WINSIZEX / 2 + 350, WINSIZEY / 2, 0);
+	ring.rcSize = VEC2(34, 34);
 	ring.isPicked = false;
 	ring.CON = 10;
 	ring.DEX = 10;
 
-	vItem.push_back( ring );
+	vItem.push_back(ring);
 
 	tagItem atifact;
 	atifact.itemKind = ITEMKIND_ATIFACT;
-	atifact.texture = TEXTUREM->Find( _T( "atifact" ) );
-	atifact.rcPosition = VEC3( WINSIZEX / 2 + 400 , WINSIZEY / 2 , 0 );
-	atifact.rcSize = VEC2( 34 , 34 );
+	atifact.texture = TEXTUREM->Find(_T("atifact"));
+	atifact.rcPosition = VEC3(WINSIZEX / 2 + 400, WINSIZEY / 2, 0);
+	atifact.rcSize = VEC2(34, 34);
 	atifact.isPicked = false;
 	atifact.CON = 10;
 	atifact.DEX = 10;
 
-	vItem.push_back( atifact );
+	vItem.push_back(atifact);
 }
 
 void P02_ItemBase::ItemIconDraw()
 {
-	for ( int i = 0; i < vItem.size(); ++i )
+	for (int i = 0; i < vItem.size(); ++i)
 	{
 		RECT ImageSize = { 0,0,34,34 };
 
-		vItem[ i ].texture->Render( &ImageSize , &vItem[ i ].rcPosition ,
-			&VEC2( vItem[ i ].rcPosition.x , vItem[ i ].rcPosition.y ) , 0.0f , &VEC2( 1.25f , 1.25f ) );
+		vItem[i].texture->Render(&ImageSize, &vItem[i].rcPosition,
+			&VEC2(vItem[i].rcPosition.x, vItem[i].rcPosition.y), 0.0f, &VEC2(1.25f, 1.25f));
 	}
 
 
@@ -195,15 +195,15 @@ void P02_ItemBase::ItemIconDraw()
 	ptMouse.y = INPUTM->GetMousePos().y;
 
 
-	TCHAR str[ 128 ];
-	_stprintf( str , "ÁÂÇ¥ : %f" , vItem[ 0 ].rcPosition.x );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 70 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
-	_stprintf( str , "»óÅÂ : %d" , ( int )select );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 50 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
-	_stprintf( str , "x : %d" , ptMouse.x );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 90 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
-	_stprintf( str , "y : %d" , ptMouse.y );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 110 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
+	TCHAR str[128];
+	_stprintf(str, "ÁÂÇ¥ : %f", vItem[0].rcPosition.x);
+	FONTM->DxDrawText(str, WINSIZEX / 2, 70, 200, 200, D3DXCOLOR(1, 1, 1, 1));
+	_stprintf(str, "»óÅÂ : %d", (int)select);
+	FONTM->DxDrawText(str, WINSIZEX / 2, 50, 200, 200, D3DXCOLOR(1, 1, 1, 1));
+	_stprintf(str, "x : %d", ptMouse.x);
+	FONTM->DxDrawText(str, WINSIZEX / 2, 90, 200, 200, D3DXCOLOR(1, 1, 1, 1));
+	_stprintf(str, "y : %d", ptMouse.y);
+	FONTM->DxDrawText(str, WINSIZEX / 2, 110, 200, 200, D3DXCOLOR(1, 1, 1, 1));
 
 
 }
@@ -215,42 +215,42 @@ void P02_ItemBase::ItemIconMove()
 	ptMouse.x = INPUTM->GetMousePos().x;
 	ptMouse.y = INPUTM->GetMousePos().y;
 
-	for ( int i = 0; i < vItem.size(); ++i )
+	for (int i = 0; i < vItem.size(); ++i)
 	{
-		SetRect( &vItem[ i ].rc , vItem[ i ].rcPosition.x , vItem[ i ].rcPosition.y ,
-			vItem[ i ].rcPosition.x + vItem[ i ].rcSize.x * 1.25 , vItem[ i ].rcPosition.y + vItem[ i ].rcSize.y * 1.25 );
+		SetRect(&vItem[i].rc, vItem[i].rcPosition.x, vItem[i].rcPosition.y,
+			vItem[i].rcPosition.x + vItem[i].rcSize.x * 1.25, vItem[i].rcPosition.y + vItem[i].rcSize.y * 1.25);
 
-		if ( INPUTM->KeyState( VK_SHIFT ) && INPUTM->KeyDown( VK_LBUTTON ) && !select )
+		if (INPUTM->KeyState(VK_SHIFT) && INPUTM->KeyDown(VK_LBUTTON) && !select)
 		{
 
-			if ( PtInRect( &vItem[ i ].rc , ptMouse ) )
+			if (PtInRect(&vItem[i].rc, ptMouse))
 			{
-				vItem[ i ].isPicked = true;
+				vItem[i].isPicked = true;
 				select = true;
 			}
-			if ( vItem[ i ].isPicked )
+			if (vItem[i].isPicked)
 			{
-				vItem[ i ].rcPosition.x = ptMouse.x - 10;
-				vItem[ i ].rcPosition.y = ptMouse.y - 10;
+				vItem[i].rcPosition.x = ptMouse.x - 10;
+				vItem[i].rcPosition.y = ptMouse.y - 10;
 			}
 			continue;
 		}
-		if ( vItem[ i ].isPicked )
+		if (vItem[i].isPicked)
 		{
-			vItem[ i ].rcPosition.x = ptMouse.x - 10;
-			vItem[ i ].rcPosition.y = ptMouse.y - 10;
+			vItem[i].rcPosition.x = ptMouse.x - 10;
+			vItem[i].rcPosition.y = ptMouse.y - 10;
 		}
 
-		if ( INPUTM->KeyDown( VK_LBUTTON ) && vItem[ i ].isPicked )
+		if (INPUTM->KeyDown(VK_LBUTTON) && vItem[i].isPicked)
 		{
-			vItem[ i ].isPicked = false;
+			vItem[i].isPicked = false;
 			select = false;
-			for ( int j = 0; j < INVEN->getInventory().size(); ++j )
+			for (int j = 0; j < INVEN->getInventory().size(); ++j)
 			{
-				if ( PtInRect( &INVEN->getInventory()[ j ].rc , ptMouse ) )
+				if (PtInRect(&INVEN->getInventory()[j].rc, ptMouse))
 				{
-					vItem[ i ].rcPosition.x = INVEN->getInventory()[ j ].rc.left;
-					vItem[ i ].rcPosition.y = INVEN->getInventory()[ j ].rc.top;
+					vItem[i].rcPosition.x = INVEN->getInventory()[j].rc.left;
+					vItem[i].rcPosition.y = INVEN->getInventory()[j].rc.top;
 				}
 			}
 		}
@@ -270,31 +270,35 @@ void P02_Inventory::Update()
 
 void P02_Inventory::Render()
 {
-	//RECT imageSize;
-	//SetRect( &imageSize , 0 , 0 , 34 , 34 );
-	//for ( int i = 0; i < vInven.size(); ++i )
-	//{
-	//	vInven[ i ].Texture[ SLOT_NONE ]->Render( &imageSize , &vInven[ i ].rcPosition , NULL , 0.0f
-	//		, &VEC2( 1.25f , 1.25f ) , D3DXCOLOR( 1.0f , 1.0f , 1.0f , 1.0f ) );
-	//}
+	RECT imageSize;
+	SetRect(&imageSize, 0, 0, 34, 34);
+	for (int i = 0; i < vInven.size(); ++i)
+	{
+		vInven[i].Texture[SLOT_NONE]->Render(&imageSize, &vInven[i].rcPosition, NULL, 0.0f
+			, &VEC2(1.25f, 1.25f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+	}
 }
 
 void P02_Inventory::SetSlot()
 {
-	tagInventory slot[ 16 ];
-	ZeroMemory( slot , sizeof( tagInventory ) );
-	for ( int i = 0; i < 16; ++i ) for ( int x = 0; x < 4; ++x ) for ( int y = 0; y < 4; ++y )
+	tagInventory slot[16];
+	ZeroMemory(slot, sizeof(tagInventory));
+	for (int i = 0; i < 16; ++i) for (int x = 0; x < 4; ++x) for (int y = 0; y < 4; ++y)for (int j = 0; j < 14; ++j)
 	{
-		if ( vInven.size() >= 16 ) break;
+		if (vInven.size() >= 16) break;
 
-		slot[ i ].Texture[ SLOT_NONE ] = TEXTUREM->Find( _T( "slot" ) );
-		slot[ i ].rcPosition = VEC3( 100 + 46 * y , WINSIZEY / 2 + 46 * x , 0 );
-		slot[ i ].rcSize = VEC2( 34 , 34 );
-		SetRect( &slot[ i ].rc , slot[ i ].rcPosition.x , slot[ i ].rcPosition.y ,
-			slot[ i ].rcPosition.x + slot[ i ].rcSize.x * 1.25f , slot[ i ].rcPosition.y + slot[ i ].rcSize.y *1.25f );
-		slot[ i ].isItem = false;
+		TCHAR str[128];
 
-		vInven.push_back( slot[ i ] );
+		_stprintf(str, _T("slot%d"), j);
+		slot[i].Texture[SLOT_NONE] = TEXTUREM->Find(_T(str));
+
+		slot[i].rcPosition = VEC3(100 + 46 * y, WINSIZEY / 2 + 46 * x, 0);
+		slot[i].rcSize = VEC2(34, 34);
+		SetRect(&slot[i].rc, slot[i].rcPosition.x, slot[i].rcPosition.y,
+			slot[i].rcPosition.x + slot[i].rcSize.x * 1.25f, slot[i].rcPosition.y + slot[i].rcSize.y *1.25f);
+		slot[i].isItem = false;
+
+		vInven.push_back(slot[i]);
 	}
 
 
@@ -305,7 +309,7 @@ void P02_Inventory::SetSlot()
 
 HRESULT P01_CharacterUI::Init()
 {
-	
+
 
 	select = false;
 
@@ -322,8 +326,7 @@ void P01_CharacterUI::Release()
 void P01_CharacterUI::Update()
 {
 
-	INVEN->Update();
-	ITEM->Update();
+
 	KeyDown();
 	SetSlot();
 }
@@ -331,7 +334,7 @@ void P01_CharacterUI::Update()
 
 void P01_CharacterUI::KeyDown()
 {
-	if ( INPUTM->KeyDown( 'I' ) )
+	if (INPUTM->KeyDown('I'))
 	{
 		select = !select;
 	}
@@ -339,22 +342,148 @@ void P01_CharacterUI::KeyDown()
 
 void P01_CharacterUI::SetSlot()
 {
-	tagInventory slot[ 16 ];
-	ZeroMemory( slot , sizeof( tagInventory ) );
-	for ( int i = 0; i < 1; ++i )
-		//for (int x = 0; x < 8; ++x) for (int y = 0; y < 1; ++y)
-	{
-		if ( vInven.size() >= 16 ) break;
+	tagInventory slot[16];
+	ZeroMemory(slot, sizeof(tagInventory));
+	
+	
+	slot[0].Texture[SLOT_NONE_HELMAT] = TEXTUREM->Find(_T("slot0"));
+	slot[0].rcPosition = VEC3(28, WINSIZEY / 2 - 275, 0);
+	slot[0].rcSize = VEC2(34, 34);
+	SetRect(&slot[0].rc, slot[0].rcPosition.x, slot[0].rcPosition.y,
+	slot[0].rcPosition.x + slot[0].rcSize.x * 1.25f, slot[0].rcPosition.y + slot[0].rcSize.y *1.25f);
+	slot[0].isItem = false;
 
-		slot[ 0 ].Texture[ SLOT_NONE_HELMAT ] = TEXTUREM->Add( _T( "slot" ) , _T( "Texture/P02_UI/invenSlot.png" ) , D3DX_FILTER_NONE );
-		slot[ 0 ].rcPosition = VEC3( 28 , WINSIZEY / 2 - 275 , 0 );
-		slot[ 0 ].rcSize = VEC2( 34 , 34 );
-		SetRect( &slot[ 0 ].rc , slot[ 0 ].rcPosition.x , slot[ 0 ].rcPosition.y ,
-			slot[ 0 ].rcPosition.x + slot[ 0 ].rcSize.x * 1.25f , slot[ 0 ].rcPosition.y + slot[ 0 ].rcSize.y *1.25f );
-		slot[ 0 ].isItem = false;
+	vInven.push_back(slot[0]);
 
-		vInven.push_back( slot[ 0 ] );
-	}
+	//
+	slot[1].Texture[SLOT_NONE_NECK] = TEXTUREM->Find(_T("slot1"));
+	slot[1].rcPosition = VEC3(28, WINSIZEY / 2-225 , 0);
+	slot[1].rcSize = VEC2(34, 34);
+	SetRect(&slot[1].rc, slot[1].rcPosition.x, slot[1].rcPosition.y,
+		slot[1].rcPosition.x + slot[1].rcSize.x * 1.25f, slot[1].rcPosition.y + slot[1].rcSize.y *1.25f);
+	slot[1].isItem = false;
+
+	vInven.push_back(slot[1]);
+
+	//
+	slot[2].Texture[SLOT_NONE_SHOULDER] = TEXTUREM->Find(_T("slot2"));
+	slot[2].rcPosition = VEC3(28, WINSIZEY / 2 - 175, 0);
+	slot[2].rcSize = VEC2(34, 34);
+	SetRect(&slot[2].rc, slot[2].rcPosition.x, slot[2].rcPosition.y,
+		slot[2].rcPosition.x + slot[2].rcSize.x * 1.25f, slot[2].rcPosition.y + slot[2].rcSize.y *1.25f);
+	slot[2].isItem = false;
+
+	vInven.push_back(slot[2]);
+
+	//
+	slot[3].Texture[SLOT_NONE_CAPE] = TEXTUREM->Find(_T("slot3"));
+	slot[3].rcPosition = VEC3(28, WINSIZEY / 2 - 121, 0);
+	slot[3].rcSize = VEC2(34, 34);
+	SetRect(&slot[3].rc, slot[3].rcPosition.x, slot[3].rcPosition.y,
+		slot[3].rcPosition.x + slot[3].rcSize.x * 1.25f, slot[3].rcPosition.y + slot[3].rcSize.y *1.25f);
+	slot[3].isItem = false;
+
+	vInven.push_back(slot[3]);
+
+	//
+	slot[4].Texture[SLOT_NONE_BODY] = TEXTUREM->Find(_T("slot4"));
+	slot[4].rcPosition = VEC3(28, WINSIZEY / 2 - 70, 0);
+	slot[4].rcSize = VEC2(34, 34);
+	SetRect(&slot[4].rc, slot[4].rcPosition.x, slot[4].rcPosition.y,
+		slot[4].rcPosition.x + slot[4].rcSize.x * 1.25f, slot[4].rcPosition.y + slot[4].rcSize.y *1.25f);
+	slot[4].isItem = false;
+
+	vInven.push_back(slot[4]);
+
+	//
+	slot[5].Texture[SLOT_NONE_WRIST] = TEXTUREM->Find(_T("slot5"));
+	slot[5].rcPosition = VEC3(28, WINSIZEY / 2 - 19, 0);
+	slot[5].rcSize = VEC2(34, 34);
+	SetRect(&slot[5].rc, slot[5].rcPosition.x, slot[5].rcPosition.y,
+		slot[5].rcPosition.x + slot[5].rcSize.x * 1.25f, slot[5].rcPosition.y + slot[5].rcSize.y *1.25f);
+	slot[5].isItem = false;
+
+	vInven.push_back(slot[5]);
+
+	//
+	slot[6].Texture[SLOT_NONE_HAND] = TEXTUREM->Find(_T("slot6"));
+	slot[6].rcPosition = VEC3(382, WINSIZEY / 2 - 275, 0);
+	slot[6].rcSize = VEC2(34, 34);
+	SetRect(&slot[6].rc, slot[6].rcPosition.x, slot[6].rcPosition.y,
+		slot[6].rcPosition.x + slot[6].rcSize.x * 1.25f, slot[6].rcPosition.y + slot[6].rcSize.y *1.25f);
+	slot[6].isItem = false;
+
+	vInven.push_back(slot[6]);
+
+	//
+	slot[7].Texture[SLOT_NONE_BELT] = TEXTUREM->Find(_T("slot7"));
+	slot[7].rcPosition = VEC3(382, WINSIZEY / 2 - 225, 0);
+	slot[7].rcSize = VEC2(34, 34);
+	SetRect(&slot[7].rc, slot[7].rcPosition.x, slot[7].rcPosition.y,
+		slot[7].rcPosition.x + slot[7].rcSize.x * 1.25f, slot[7].rcPosition.y + slot[7].rcSize.y *1.25f);
+	slot[7].isItem = false;
+
+	vInven.push_back(slot[7]);
+
+	//
+	slot[8].Texture[SLOT_NONE_PANTS] = TEXTUREM->Find(_T("slot8"));
+	slot[8].rcPosition = VEC3(382, WINSIZEY / 2 - 175, 0);
+	slot[8].rcSize = VEC2(34, 34);
+	SetRect(&slot[8].rc, slot[8].rcPosition.x, slot[8].rcPosition.y,
+		slot[8].rcPosition.x + slot[8].rcSize.x * 1.25f, slot[8].rcPosition.y + slot[8].rcSize.y *1.25f);
+	slot[8].isItem = false;
+
+	vInven.push_back(slot[8]);
+
+	//
+	slot[9].Texture[SLOT_NONE_SHOES] = TEXTUREM->Find(_T("slot9"));
+	slot[9].rcPosition = VEC3(382, WINSIZEY / 2 - 121, 0);
+	slot[9].rcSize = VEC2(34, 34);
+	SetRect(&slot[9].rc, slot[9].rcPosition.x, slot[9].rcPosition.y,
+		slot[9].rcPosition.x + slot[9].rcSize.x * 1.25f, slot[9].rcPosition.y + slot[9].rcSize.y *1.25f);
+	slot[9].isItem = false;
+
+	vInven.push_back(slot[9]);
+
+	//
+	slot[10].Texture[SLOT_NONE_RING01] = TEXTUREM->Find(_T("slot10"));
+	slot[10].rcPosition = VEC3(382, WINSIZEY / 2 - 70, 0);
+	slot[10].rcSize = VEC2(34, 34);
+	SetRect(&slot[10].rc, slot[10].rcPosition.x, slot[10].rcPosition.y,
+		slot[10].rcPosition.x + slot[10].rcSize.x * 1.25f, slot[10].rcPosition.y + slot[6].rcSize.y *1.25f);
+	slot[10].isItem = false;
+
+	vInven.push_back(slot[10]);
+
+	//
+	slot[11].Texture[SLOT_NONE_RING02] = TEXTUREM->Find(_T("slot11"));
+	slot[11].rcPosition = VEC3(382, WINSIZEY / 2 - 19, 0);
+	slot[11].rcSize = VEC2(34, 34);
+	SetRect(&slot[11].rc, slot[11].rcPosition.x, slot[11].rcPosition.y,
+		slot[11].rcPosition.x + slot[11].rcSize.x * 1.25f, slot[11].rcPosition.y + slot[11].rcSize.y *1.25f);
+	slot[11].isItem = false;
+
+	vInven.push_back(slot[11]);
+
+	//
+	slot[12].Texture[SLOT_NONE_WEAPON] = TEXTUREM->Find(_T("slot12"));
+	slot[12].rcPosition = VEC3(181, WINSIZEY / 2 +110, 0);
+	slot[12].rcSize = VEC2(34, 34);
+	SetRect(&slot[12].rc, slot[12].rcPosition.x, slot[12].rcPosition.y,
+		slot[12].rcPosition.x + slot[12].rcSize.x * 1.25f, slot[12].rcPosition.y + slot[12].rcSize.y *1.25f);
+	slot[12].isItem = false;
+
+	vInven.push_back(slot[12]);
+
+	//
+	slot[13].Texture[SLOT_NONE_SHIELD] = TEXTUREM->Find(_T("slot13"));
+	slot[13].rcPosition = VEC3(233, WINSIZEY / 2 + 110, 0);
+	slot[13].rcSize = VEC2(34, 34);
+	SetRect(&slot[13].rc, slot[13].rcPosition.x, slot[13].rcPosition.y,
+		slot[13].rcPosition.x + slot[13].rcSize.x * 1.25f, slot[13].rcPosition.y + slot[13].rcSize.y *1.25f);
+	slot[13].isItem = false;
+
+	vInven.push_back(slot[13]);
 }
 
 void P01_CharacterUI::ItemMove()
@@ -374,24 +503,61 @@ void P01_CharacterUI::InvenMove()
 void P01_CharacterUI::Render()
 {
 	RECT rc = { 0,0, 702, 601 };
-	VEC3 pos = VEC3( 0 , 0 , 0 );
-	VEC2 scale = VEC2( WINSIZEX / 1024.0f , WINSIZEY / 768.0f );
+	VEC3 pos = VEC3(0, 0, 0);
+	VEC2 scale = VEC2(WINSIZEX / 1024.0f, WINSIZEY / 768.0f);
 
-	if ( select == true )
+	if (select == true)
 	{
-		TEXTUREM->Find( _T( "characterInven" ) )->Render( &rc , &pos , &VEC2( 0 , 0 ) , 0.0f , &scale , D3DXCOLOR( 1 , 1 , 1 , 1.0f ) );
+		TEXTUREM->Find(_T("characterInven"))->Render(&rc, &pos, &VEC2(0, 0), 0.0f, &scale, D3DXCOLOR(1, 1, 1, 1.0f));
 
 		RECT imageSize;
-		SetRect( &imageSize , 0 , 0 , 47 , 46 );
-		for ( int i = 0; i < vInven.size(); ++i )
+		SetRect(&imageSize, 0, 0, 47, 46);
+		for (int i = 0; i < vInven.size(); ++i)
 		{
-			vInven[ 0 ].Texture[ SLOT_NONE_HELMAT ]->Render( &imageSize , &vInven[ 0 ].rcPosition , NULL , 0.0f
-				, &VEC2( 1.0f , 1.0f ) , D3DXCOLOR( 1.0f , 1.0f , 1.0f , 1.0f ) );
-			////////
-			/*vInven[i].Texture[SLOT_NONE_NECK]->Render(&imageSize, &vInven[i].rcPosition, NULL, 0.0f
-			, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));*/
+			vInven[0].Texture[SLOT_NONE_HELMAT]->Render(&imageSize, &vInven[0].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[1].Texture[SLOT_NONE_NECK]->Render(&imageSize, &vInven[1].rcPosition, NULL, 0.0f
+			, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[2].Texture[SLOT_NONE_SHOULDER]->Render(&imageSize, &vInven[2].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[3].Texture[SLOT_NONE_CAPE]->Render(&imageSize, &vInven[3].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[4].Texture[SLOT_NONE_BODY]->Render(&imageSize, &vInven[4].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[5].Texture[SLOT_NONE_WRIST]->Render(&imageSize, &vInven[5].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[6].Texture[SLOT_NONE_HAND]->Render(&imageSize, &vInven[6].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[7].Texture[SLOT_NONE_BELT]->Render(&imageSize, &vInven[7].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[8].Texture[SLOT_NONE_PANTS]->Render(&imageSize, &vInven[8].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[9].Texture[SLOT_NONE_SHOES]->Render(&imageSize, &vInven[9].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[10].Texture[SLOT_NONE_RING01]->Render(&imageSize, &vInven[10].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[11].Texture[SLOT_NONE_RING02]->Render(&imageSize, &vInven[11].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[12].Texture[SLOT_NONE_WEAPON]->Render(&imageSize, &vInven[12].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+			//
+			vInven[13].Texture[SLOT_NONE_SHIELD]->Render(&imageSize, &vInven[13].rcPosition, NULL, 0.0f
+				, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+
 
 		}
 	}
-	ITEM->Render();
+
 }
