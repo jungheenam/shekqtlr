@@ -85,22 +85,22 @@
     <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne">
       <UniqueIdentifier>{daa6b3f6-22ff-4650-9f80-55465b36a5fc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik">
+    <Filter Include="01. MainGame\02. Hyunsik">
       <UniqueIdentifier>{265a07cc-8bb9-4a84-ac20-935b72888ef7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\00. UI">
+    <Filter Include="01. MainGame\02. Hyunsik\00. UI">
       <UniqueIdentifier>{e222d25b-18a5-4f62-bbbb-1866766d4119}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\01. PlayerStat">
+    <Filter Include="01. MainGame\02. Hyunsik\01. PlayerStat">
       <UniqueIdentifier>{00b978ff-625e-4f63-8f20-8392dd88dc12}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\02. Item">
+    <Filter Include="01. MainGame\02. Hyunsik\02. Item">
       <UniqueIdentifier>{eab4d63b-9bb9-4e79-bd24-dff00e1fed4e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\03.Loading">
+    <Filter Include="01. MainGame\02. Hyunsik\03.Loading">
       <UniqueIdentifier>{081b4897-9eaa-4599-8f7e-124c45072b4f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\04.Progressbar">
+    <Filter Include="01. MainGame\02. Hyunsik\04.Progressbar">
       <UniqueIdentifier>{26ee4979-eda3-4adc-a07b-bdc1aadf8769}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -229,13 +229,13 @@
       <Filter>00. 3DFramework\05. Texture</Filter>
     </ClInclude>
     <ClInclude Include="P02_UIButtonScene.h">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik</Filter>
+      <Filter>01. MainGame\02. Hyunsik</Filter>
     </ClInclude>
     <ClInclude Include="P02_PlayerStat.h">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\01. PlayerStat</Filter>
+      <Filter>01. MainGame\02. Hyunsik\01. PlayerStat</Filter>
     </ClInclude>
     <ClInclude Include="P02_ItemBase.h">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\02. Item</Filter>
+      <Filter>01. MainGame\02. Hyunsik\02. Item</Filter>
     </ClInclude>
     <ClInclude Include="P01_StartMenuScene.h">
       <Filter>01. MainGame\01. Junseo\00.StartScene</Filter>
@@ -244,13 +244,16 @@
       <Filter>01. MainGame\01. Junseo\01.LoadingSecne</Filter>
     </ClInclude>
     <ClInclude Include="P02_UIButton.h">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\00. UI</Filter>
+      <Filter>01. MainGame\02. Hyunsik\00. UI</Filter>
     </ClInclude>
     <ClInclude Include="P02_Loading.h">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\03.Loading</Filter>
+      <Filter>01. MainGame\02. Hyunsik\03.Loading</Filter>
     </ClInclude>
     <ClInclude Include="P02_Progressbar.h">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\04.Progressbar</Filter>
+      <Filter>01. MainGame\02. Hyunsik\04.Progressbar</Filter>
+    </ClInclude>
+    <ClInclude Include="P02_UISroll.h">
+      <Filter>01. MainGame\02. Hyunsik\00. UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -354,13 +357,13 @@
       <Filter>00. 3DFramework\05. Texture</Filter>
     </ClCompile>
     <ClCompile Include="P02_UIButtonScene.cpp">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik</Filter>
+      <Filter>01. MainGame\02. Hyunsik</Filter>
     </ClCompile>
     <ClCompile Include="P02_PlayerStat.cpp">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\01. PlayerStat</Filter>
+      <Filter>01. MainGame\02. Hyunsik\01. PlayerStat</Filter>
     </ClCompile>
     <ClCompile Include="P02_ItemBase.cpp">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\02. Item</Filter>
+      <Filter>01. MainGame\02. Hyunsik\02. Item</Filter>
     </ClCompile>
     <ClCompile Include="P01_StartMenuScene.cpp">
       <Filter>01. MainGame\01. Junseo\00.StartScene</Filter>
@@ -369,13 +372,16 @@
       <Filter>01. MainGame\01. Junseo\01.LoadingSecne</Filter>
     </ClCompile>
     <ClCompile Include="P02_UIButton.cpp">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\00. UI</Filter>
+      <Filter>01. MainGame\02. Hyunsik\00. UI</Filter>
     </ClCompile>
     <ClCompile Include="P02_Loading.cpp">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\03.Loading</Filter>
+      <Filter>01. MainGame\02. Hyunsik\03.Loading</Filter>
     </ClCompile>
     <ClCompile Include="P02_Progressbar.cpp">
-      <Filter>01. MainGame\01. Junseo\01.LoadingSecne\02. Hyunsik\04.Progressbar</Filter>
+      <Filter>01. MainGame\02. Hyunsik\04.Progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="P02_UISroll.cpp">
+      <Filter>01. MainGame\02. Hyunsik\00. UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
