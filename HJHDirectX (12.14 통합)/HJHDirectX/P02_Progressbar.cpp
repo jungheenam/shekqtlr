@@ -30,20 +30,19 @@ HRESULT P02_Progressbar::Init( TCHAR * _toptexture , TCHAR * _bottom , VEC3 _pos
 {
 	pos.x = _position.x;
 	pos.y = _position.y;
+	scale = { 1.0f , 1.0f };
 
 	rc = RectMake( _position.x , _position.y , _size.x , _size.y );
 
 	TCHAR topTex[ 128 ];
 	TCHAR bottmTex[ 128 ];
-
+	textureTop = TEXTUREM->Add( _toptexture , topTex );
+	textureBottom = TEXTUREM->Add( _bottom , bottmTex );
 	ZeroMemory( topTex , sizeof( topTex ) );
 	ZeroMemory( bottmTex , sizeof( bottmTex ) );
 
 	_stprintf( topTex , _T( "%s.png" ) , _toptexture );
 	_stprintf( bottmTex , _T( "%s.png" ) , _bottom );
-
-	textureTop = TEXTUREM->Add( _toptexture , topTex );
-	textureBottom = TEXTUREM->Add( _bottom , bottmTex );
 
 	width = textureBottom->getImageInfo()->fW;
 

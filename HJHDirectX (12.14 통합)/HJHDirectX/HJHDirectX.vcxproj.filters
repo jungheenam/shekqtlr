@@ -252,6 +252,9 @@
     <ClInclude Include="P02_Progressbar.h">
       <Filter>01. MainGame\02. Hyunsik\04.Progressbar</Filter>
     </ClInclude>
+    <ClInclude Include="P02_UISroll.h">
+      <Filter>01. MainGame\02. Hyunsik\00. UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HJHDirectX.cpp">
@@ -376,6 +379,9 @@
     </ClCompile>
     <ClCompile Include="P02_Progressbar.cpp">
       <Filter>01. MainGame\02. Hyunsik\04.Progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="P02_UISroll.cpp">
+      <Filter>01. MainGame\02. Hyunsik\00. UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

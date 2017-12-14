@@ -3,11 +3,9 @@
 
 
 P02_UIButton::P02_UIButton()
-	:position( 0 , 0 , 0 ) , size( 0 , 0 ) , scale( 0 , 0 ) , isclick( false ) , buttonstat( BUTTONSTAT_NORMAL )
+	:position( 0 , 0 , 0 ) , size( 0 , 0 ) , 
+	scale( 0 , 0 ) , isclick( false ) , buttonstat( BUTTONSTAT_NORMAL )
 {
-
-
-
 }
 
 
@@ -18,8 +16,6 @@ P02_UIButton::~P02_UIButton()
 HRESULT P02_UIButton::Init( BOOL _callback , VEC3 _postion , VEC2 _size , VEC2 _scale , TCHAR* _string , CALLBACK_FUNTION _void )
 {
 
-	cb = _callback;
-	str = _string;
 	if ( cb ) callback = static_cast< CALLBACK_FUNTION >( _void );
 
 	textureBT[ BUTTONSTAT_NORMAL ] = TEXTUREM->Find( _T( "normal" ) );
@@ -27,6 +23,8 @@ HRESULT P02_UIButton::Init( BOOL _callback , VEC3 _postion , VEC2 _size , VEC2 _
 	textureBT[ BUTTONSTAT_DOWN ] = TEXTUREM->Find( _T( "down" ) );
 
 
+	cb = _callback;
+	str = _string;
 	SetSize( _size );
 	SetPosition( _postion );
 	SetScale( _scale );
