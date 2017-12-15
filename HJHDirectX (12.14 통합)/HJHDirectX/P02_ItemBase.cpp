@@ -35,11 +35,13 @@ void P02_ItemBase::Render()
 void P02_ItemBase::SetItemInfo()
 {
 
+	
+
 	tagItem helmat;
 	helmat.Name = _T( "머리" );
 	helmat.itemKind = ITEMKIND_HELMAT;
 	helmat.texture = TEXTUREM->Find( _T( "helmat" ) );
-	helmat.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 100 , 0 );
+	helmat.rcPosition = VEC3( INVEN->getInventory()[ 0 ].rcPosition.x , INVEN->getInventory()[ 0 ].rcPosition.y , 0 );
 	helmat.rcSize = VEC2( 34 , 34 );
 	helmat.isPicked = false;
 	helmat.onToolTip = false;
@@ -53,7 +55,7 @@ void P02_ItemBase::SetItemInfo()
 	neck.Name = _T( "목" );
 	neck.itemKind = ITEMKIND_NECK;
 	neck.texture = TEXTUREM->Find( _T( "neck" ) );
-	neck.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 150 , 0 );
+	neck.rcPosition = VEC3( INVEN->getInventory()[ 1 ].rcPosition.x , INVEN->getInventory()[ 1 ].rcPosition.y , 0 );
 	neck.rcSize = VEC2( 34 , 34 );
 	neck.isPicked = false;
 	neck.onToolTip = false;
@@ -67,7 +69,7 @@ void P02_ItemBase::SetItemInfo()
 	shoulder.Name = _T( "어깨" );
 	shoulder.itemKind = ITEMKIND_SHOULDER;
 	shoulder.texture = TEXTUREM->Find( _T( "shoulder" ) );
-	shoulder.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 200 , 0 );
+	shoulder.rcPosition = VEC3( INVEN->getInventory()[ 2 ].rcPosition.x , INVEN->getInventory()[ 2 ].rcPosition.y , 0 );
 	shoulder.rcSize = VEC2( 34 , 34 );
 	shoulder.isPicked = false;
 	shoulder.onToolTip = false;
@@ -80,7 +82,7 @@ void P02_ItemBase::SetItemInfo()
 	cape.Name = _T( "망토" );
 	cape.itemKind = ITEMKIND_CAPE;
 	cape.texture = TEXTUREM->Find( _T( "cape" ) );
-	cape.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 250 , 0 );
+	cape.rcPosition = VEC3( INVEN->getInventory()[ 3 ].rcPosition.x , INVEN->getInventory()[ 3 ].rcPosition.y , 0 );
 	cape.rcSize = VEC2( 34 , 34 );
 	cape.isPicked = false;
 	cape.onToolTip = false;
@@ -93,7 +95,7 @@ void P02_ItemBase::SetItemInfo()
 	body.Name = _T( "상의" );
 	body.itemKind = ITEMKIND_BODY;
 	body.texture = TEXTUREM->Find( _T( "body" ) );
-	body.rcPosition = VEC3( WINSIZEX / 2 , WINSIZEY / 2 - 300 , 0 );
+	body.rcPosition = VEC3( INVEN->getInventory()[ 4 ].rcPosition.x , INVEN->getInventory()[ 4 ].rcPosition.y , 0 );
 	body.rcSize = VEC2( 34 , 34 );
 	body.isPicked = false;
 	body.onToolTip = false;
@@ -106,7 +108,7 @@ void P02_ItemBase::SetItemInfo()
 	wirst.Name = _T( "손목" );
 	wirst.itemKind = ITEMKIND_WRIST;
 	wirst.texture = TEXTUREM->Find( _T( "wirst" ) );
-	wirst.rcPosition = VEC3( WINSIZEX / 2 + 100 , WINSIZEY / 2 , 0 );
+	wirst.rcPosition = VEC3( INVEN->getInventory()[ 5 ].rcPosition.x , INVEN->getInventory()[ 5 ].rcPosition.y , 0 );
 	wirst.rcSize = VEC2( 34 , 34 );
 	wirst.isPicked = false;
 	wirst.onToolTip = false;
@@ -119,7 +121,7 @@ void P02_ItemBase::SetItemInfo()
 	hand.Name = _T( "손" );
 	hand.itemKind = ITEMKIND_HAND;
 	hand.texture = TEXTUREM->Find( _T( "hand" ) );
-	hand.rcPosition = VEC3( WINSIZEX / 2 + 150 , WINSIZEY / 2 , 0 );
+	hand.rcPosition = VEC3( INVEN->getInventory()[ 6 ].rcPosition.x , INVEN->getInventory()[ 6 ].rcPosition.y , 0 );
 	hand.rcSize = VEC2( 34 , 34 );
 	hand.isPicked = false;
 	hand.onToolTip = false;
@@ -132,7 +134,7 @@ void P02_ItemBase::SetItemInfo()
 	belt.Name = _T( "벨트" );
 	belt.itemKind = ITEMKIND_BELT;
 	belt.texture = TEXTUREM->Find( _T( "belt" ) );
-	belt.rcPosition = VEC3( WINSIZEX / 2 + 200 , WINSIZEY / 2 , 0 );
+	belt.rcPosition = VEC3( INVEN->getInventory()[ 7 ].rcPosition.x , INVEN->getInventory()[ 7 ].rcPosition.y , 0 );
 	belt.rcSize = VEC2( 34 , 34 );
 	belt.isPicked = false;
 	belt.onToolTip = false;
@@ -146,7 +148,7 @@ void P02_ItemBase::SetItemInfo()
 	pants.Name = _T( "바지" );
 	pants.itemKind = ITEMKIND_PANTS;
 	pants.texture = TEXTUREM->Find( _T( "pants" ) );
-	pants.rcPosition = VEC3( WINSIZEX / 2 + 250 , WINSIZEY / 2 , 0 );
+	pants.rcPosition = VEC3( INVEN->getInventory()[ 8 ].rcPosition.x , INVEN->getInventory()[ 8 ].rcPosition.y , 0 );
 	pants.rcSize = VEC2( 34 , 34 );
 	pants.isPicked = false;
 	pants.onToolTip = false;
@@ -159,7 +161,7 @@ void P02_ItemBase::SetItemInfo()
 	shose.Name = _T( "신발" );
 	shose.itemKind = ITEMKIND_SHOSE;
 	shose.texture = TEXTUREM->Find( _T( "shose" ) );
-	shose.rcPosition = VEC3( WINSIZEX / 2 + 300 , WINSIZEY / 2 , 0 );
+	shose.rcPosition = VEC3( INVEN->getInventory()[ 9 ].rcPosition.x , INVEN->getInventory()[ 9 ].rcPosition.y , 0 );
 	shose.rcSize = VEC2( 34 , 34 );
 	shose.isPicked = false;
 	shose.onToolTip = false;
@@ -172,7 +174,7 @@ void P02_ItemBase::SetItemInfo()
 	ring.Name = _T( "반지" );
 	ring.itemKind = ITEMKIND_RING;
 	ring.texture = TEXTUREM->Find( _T( "ring" ) );
-	ring.rcPosition = VEC3( WINSIZEX / 2 + 350 , WINSIZEY / 2 , 0 );
+	ring.rcPosition = VEC3( INVEN->getInventory()[ 10 ].rcPosition.x , INVEN->getInventory()[ 10 ].rcPosition.y , 0 );
 	ring.rcSize = VEC2( 34 , 34 );
 	ring.isPicked = false;
 	ring.onToolTip = false;
@@ -185,7 +187,7 @@ void P02_ItemBase::SetItemInfo()
 	atifact.Name = _T( "장신구" );
 	atifact.itemKind = ITEMKIND_ATIFACT;
 	atifact.texture = TEXTUREM->Find( _T( "atifact" ) );
-	atifact.rcPosition = VEC3( WINSIZEX / 2 + 400 , WINSIZEY / 2 , 0 );
+	atifact.rcPosition = VEC3( INVEN->getInventory()[ 11 ].rcPosition.x , INVEN->getInventory()[ 11 ].rcPosition.y , 0 );
 	atifact.rcSize = VEC2( 34 , 34 );
 	atifact.isPicked = false;
 	atifact.onToolTip = false;
@@ -245,6 +247,7 @@ void P02_ItemBase::ItemIconMove()
 		if ( PtInRect( &vItem[ i ].rc , ptMouse ) ) vItem[ i ].onToolTip = true;
 		else vItem[ i ].onToolTip = false;
 
+		//==============================아이템 아이콘이동============================
 		if ( INPUTM->KeyState( VK_SHIFT ) && INPUTM->KeyDown( VK_LBUTTON ) && !select )
 		{
 
@@ -265,7 +268,9 @@ void P02_ItemBase::ItemIconMove()
 			vItem[ i ].rcPosition.x = ptMouse.x - 10;
 			vItem[ i ].rcPosition.y = ptMouse.y - 10;
 		}
-
+		//==========================================================================
+		
+		//============================아이템내려놓기=================================
 		if ( INPUTM->KeyDown( VK_LBUTTON ) && vItem[ i ].isPicked )
 		{
 			vItem[ i ].isPicked = false;
@@ -279,7 +284,7 @@ void P02_ItemBase::ItemIconMove()
 				}
 			}
 		}
-
+		//==========================================================================
 	}
 }
 
@@ -343,15 +348,17 @@ void P02_Inventory::SetSlot()
 	}
 }
 
+void P02_Inventory::pushItem( tagItem * _item )
+{
+
+}
+
 
 
 
 HRESULT P01_CharacterUI::Init()
 {
-
-
 	select = false;
-
 	this->SetSlot();
 
 	return S_OK;
@@ -364,10 +371,8 @@ void P01_CharacterUI::Release()
 
 void P01_CharacterUI::Update()
 {
-
-
-	KeyDown();
-	SetSlot();
+	this->KeyDown();
+	this->SetSlot();
 }
 
 

@@ -126,8 +126,11 @@ public:
 	void Update();
 	void Render();
 	void SetSlot();
+
+	void pushItem( tagItem* _item );
 	
 	vector<tagInventory> getInventory() { return vInven; }
+	
 
 
 private:
