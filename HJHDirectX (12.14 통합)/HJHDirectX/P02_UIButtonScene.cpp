@@ -28,8 +28,8 @@ HRESULT P02_UIButtonScene::Init()
 
 	
 	CHARUI->Init();
-	ITEM->Init();
 	INVEN->Init();
+	ITEM->Init();
 
 	
 
@@ -50,8 +50,8 @@ void P02_UIButtonScene::Update()
 	//================================================
 
 	CHARUI->Update();
-	ITEM->Update();
 	INVEN->Update();
+	ITEM->Update();
 
 
 }
@@ -64,8 +64,8 @@ void P02_UIButtonScene::Render()
 	button2->Render();	
 
 
-	INVEN->Render();
 	CHARUI->Render();
+	INVEN->Render();
 	ITEM->Render();
 
 
