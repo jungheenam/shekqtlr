@@ -58,7 +58,7 @@ void P01_LoadingScene::LoadTexture()
 	loading->LoadTexture( _T( "normal" ) , _T( "Texture/P02_UITest/mainButton01.png " ) );
 	loading->LoadTexture( _T( "over" ) , _T( "Texture/P02_UITest/mainButton01.png " ) );
 	loading->LoadTexture( _T( "down" ) , _T( "Texture/P02_UITest/mainButton02.png " ) );
-
+	loading->LoadTexture( _T( "tooltip" ) , _T( "Texture/P02_UI/tooltip.png" ) );
 	//============================================================================
 
 
@@ -66,18 +66,6 @@ void P01_LoadingScene::LoadTexture()
 
 	loading->LoadTexture( _T( "slot" ) , _T( "Texture/P02_UI/invenSlot.png" ) );
 	loading->LoadTexture( _T( "characterInven" ) , _T( "Texture/P01_Inventory/playerUI.png" ) );
-
-	TCHAR key[ 32 ];
-	TCHAR file[ 128 ];
-	for ( int i = 0; i < 14; ++i )
-	{
-		_stprintf( key , "slot%d" , i );
-		_stprintf( file , "Texture/P01_Inventory/slot%d" , i );
-		loading->LoadTexture( key , file );
-	}
-
-	//=================================ÀÎº¥=======================================
-
 
 	loading->LoadTexture(_T("playerUI"), _T("Texture/P01_Inventory/playerUI.png"));
 

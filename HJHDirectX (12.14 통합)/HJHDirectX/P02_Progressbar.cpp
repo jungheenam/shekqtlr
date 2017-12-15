@@ -26,7 +26,7 @@ HRESULT P02_Progressbar::Init( VEC3 _position , VEC2 _size )
 	return S_OK;
 }
 
-HRESULT P02_Progressbar::Init( TCHAR * _toptexture , TCHAR * _bottom , VEC3 _position , VEC2 _size)
+HRESULT P02_Progressbar::Init( TCHAR * _toptexture , TCHAR * _bottom , VEC3 _position , VEC2 _size )
 {
 	pos.x = _position.x;
 	pos.y = _position.y;
@@ -42,7 +42,7 @@ HRESULT P02_Progressbar::Init( TCHAR * _toptexture , TCHAR * _bottom , VEC3 _pos
 	_stprintf( topTex , _T( "%s.png" ) , _toptexture );
 	_stprintf( bottmTex , _T( "%s.png" ) , _bottom );
 
-	textureTop = TEXTUREM->Add( _toptexture , topTex );
+	textureTop = TEXTUREM->Add( _toptexture , topTex , D3DX_FILTER_NONE , D3DXCOLOR( 1 , 0 , 1 , 1 ) );
 	textureBottom = TEXTUREM->Add( _bottom , bottmTex );
 
 	width = textureBottom->getImageInfo()->fW;
@@ -62,8 +62,8 @@ void P02_Progressbar::Update()
 
 void P02_Progressbar::Render()
 {
-	RECT TopImgSize		= { 0, 0, width,50 };
-	RECT BottomImgSize	= { 0, 0, textureBottom->getImageInfo()->fW , 50 };
+	RECT TopImgSize = { 0, 0, width,50 };
+	RECT BottomImgSize = { 0, 0, textureBottom->getImageInfo()->fW , 50 };
 
 	textureBottom->Render( &BottomImgSize , &pos );
 	textureTop->Render( &TopImgSize , &pos );

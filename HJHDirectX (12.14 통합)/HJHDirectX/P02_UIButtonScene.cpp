@@ -64,9 +64,9 @@ void P02_UIButtonScene::Render()
 	button2->Render();	
 
 
-	ITEM->Render();
 	INVEN->Render();
 	CHARUI->Render();
+	ITEM->Render();
 
 
 }

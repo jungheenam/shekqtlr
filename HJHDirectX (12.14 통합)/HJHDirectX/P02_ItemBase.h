@@ -62,6 +62,7 @@ enum INVENTORYSLOT
 
 struct tagItem
 {
+	tstring  Name;
 	ITEMKIND itemKind;
 	Texture* texture;
 	RECT rc;
@@ -71,12 +72,16 @@ struct tagItem
 	int CON;
 
 	bool isPicked;
+	Texture* textureTT;
+	VEC3 tooltipPos;
+	bool onToolTip;
 };
 
 
 struct tagInventory
 {
-	Texture* Texture[SLOT_END];
+	Texture* TextureI;						//인벤토리창 슬롯
+	Texture* TextureC[ SLOT_END ];			//캐릭터창 슬롯
 	RECT rc;
 	VEC3 rcPosition;
 	VEC2 rcSize;
@@ -89,6 +94,7 @@ class P02_ItemBase :public SingletonBase<P02_ItemBase>
 private:
 	vector<tagItem> vItem;
 	ITEMKIND itemKind;
+	tagItem toolTip;
 
 	bool select = false;
 
@@ -104,6 +110,7 @@ public:
 	void SetItemInfo();
 	void ItemIconDraw();
 	void ItemIconMove();
+	void ItemToolTip( tagItem* _item );
 
 	vector<tagItem> getItem() { return vItem; }
 };
@@ -112,8 +119,8 @@ public:
 class P02_Inventory : public SingletonBase<P02_Inventory>
 {
 public:
-	P02_Inventory();
-	~P02_Inventory();
+	P02_Inventory() {};
+	~P02_Inventory() {};
 
 	void Init();
 	void Update();
