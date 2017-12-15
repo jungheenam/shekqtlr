@@ -199,7 +199,7 @@ void P02_ItemBase::SetItemInfo()
 
 void P02_ItemBase::ItemIconDraw()
 {
-	static int temp = 0;
+	int temp = 0;
 	for ( int i = 0; i < vItem.size(); ++i )
 	{
 		RECT ImageSize = { 0,0,34,34 };
@@ -208,25 +208,32 @@ void P02_ItemBase::ItemIconDraw()
 			&VEC2( vItem[ i ].rcPosition.x , vItem[ i ].rcPosition.y ) , 0.0f , &VEC2( 1.25f , 1.25f ) );
 
 		if ( vItem[ i ].onToolTip ) temp = i;
-
+		
+		//랜더순서 스왑
+		if ( vItem[ i ].isPicked )
+		{
+			tagItem token;
+			token = vItem[ i ];
+			vItem[ i ] = vItem[ vItem.size() - 1 ];
+			vItem[ vItem.size() - 1 ] = token;
+		}
 	}
-
-		if ( vItem[ temp ].onToolTip ) ItemToolTip( &vItem[ temp ] );
-
-	POINT ptMouse;
-	ptMouse.x = INPUTM->GetMousePos().x;
-	ptMouse.y = INPUTM->GetMousePos().y;
+	if ( vItem[ temp ].onToolTip ) ItemToolTip( &vItem[ temp ] );
 
 
-	TCHAR str[ 128 ];
-	_stprintf( str , "좌표 : %f" , vItem[ 0 ].rcPosition.x );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 70 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
-	_stprintf( str , "상태 : %d" , ( int )select );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 50 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
-	_stprintf( str , "x : %d" , ptMouse.x );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 90 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
-	_stprintf( str , "y : %d" , ptMouse.y );
-	FONTM->DxDrawText( str , WINSIZEX / 2 , 110 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
+	//===디버깅용===
+	//POINT ptMouse;
+	//ptMouse.x = INPUTM->GetMousePos().x;
+	//ptMouse.y = INPUTM->GetMousePos().y;
+	//TCHAR str[ 128 ];
+	//_stprintf( str , "좌표 : %f" , vItem[ 0 ].rcPosition.x );
+	//FONTM->DxDrawText( str , WINSIZEX / 2 , 70 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
+	//_stprintf( str , "상태 : %d" , ( int )select );
+	//FONTM->DxDrawText( str , WINSIZEX / 2 , 50 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
+	//_stprintf( str , "x : %d" , ptMouse.x );
+	//FONTM->DxDrawText( str , WINSIZEX / 2 , 90 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
+	//_stprintf( str , "y : %d" , ptMouse.y );
+	//FONTM->DxDrawText( str , WINSIZEX / 2 , 110 , 200 , 200 , D3DXCOLOR( 1 , 1 , 1 , 1 ) );
 
 
 }
@@ -283,6 +290,16 @@ void P02_ItemBase::ItemIconMove()
 					vItem[ i ].rcPosition.y = INVEN->getInventory()[ j ].rc.top;
 				}
 			}
+
+			for ( int z = 0; z < CHARUI->getInventory().size(); ++z )
+			{
+				if ( PtInRect( &CHARUI->getInventory()[ z ].rc , ptMouse ) )
+				{
+					vItem[ i ].rcPosition.x = CHARUI->getInventory()[ z ].rc.left;
+					vItem[ i ].rcPosition.y = CHARUI->getInventory()[ z ].rc.top;
+				}
+			}
+
 		}
 		//==========================================================================
 	}
@@ -350,7 +367,10 @@ void P02_Inventory::SetSlot()
 
 void P02_Inventory::pushItem( tagItem * _item )
 {
-
+	for ( int i = 0; i < vInven.size(); ++i )
+	{
+		
+	}
 }
 
 
@@ -372,7 +392,6 @@ void P01_CharacterUI::Release()
 void P01_CharacterUI::Update()
 {
 	this->KeyDown();
-	this->SetSlot();
 }
 
 
@@ -386,7 +405,7 @@ void P01_CharacterUI::KeyDown()
 
 void P01_CharacterUI::SetSlot()
 {
-	tagInventory slot[ 16 ];
+	tagInventory slot[ 14 ];
 	ZeroMemory( slot , sizeof( tagInventory ) );
 
 	slot[0].TextureC[SLOT_NONE_HELMAT] = TEXTUREM->Find(_T("slot0"));
@@ -555,8 +574,7 @@ void P01_CharacterUI::Render()
 
 		RECT imageSize;
 		SetRect( &imageSize , 0 , 0 , 47 , 46 );
-		//for (int i = 0; i < vInven.size(); ++i)
-		//{
+
 		vInven[ 0 ].TextureC[ SLOT_NONE_HELMAT ]->Render( &imageSize , &vInven[ 0 ].rcPosition , NULL , 0.0f
 			, &VEC2( 1.0f , 1.0f ) , D3DXCOLOR( 1.0f , 1.0f , 1.0f , 1.0f ) );
 		//
