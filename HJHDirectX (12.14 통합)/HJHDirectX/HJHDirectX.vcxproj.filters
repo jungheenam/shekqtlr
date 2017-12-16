@@ -103,6 +103,9 @@
     <Filter Include="01. MainGame\02. Hyunsik\04.Progressbar">
       <UniqueIdentifier>{26ee4979-eda3-4adc-a07b-bdc1aadf8769}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01. MainGame\01. Junseo\02.Player">
+      <UniqueIdentifier>{d1009bf6-c4b3-4ffe-8896-31afeae154f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -252,6 +255,9 @@
     <ClInclude Include="P02_Progressbar.h">
       <Filter>01. MainGame\02. Hyunsik\04.Progressbar</Filter>
     </ClInclude>
+    <ClInclude Include="P01_GaugeBar.h">
+      <Filter>01. MainGame\01. Junseo\02.Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HJHDirectX.cpp">
@@ -376,6 +382,9 @@
     </ClCompile>
     <ClCompile Include="P02_Progressbar.cpp">
       <Filter>01. MainGame\02. Hyunsik\04.Progressbar</Filter>
+    </ClCompile>
+    <ClCompile Include="P01_GaugeBar.cpp">
+      <Filter>01. MainGame\01. Junseo\02.Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

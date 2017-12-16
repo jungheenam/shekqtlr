@@ -2,6 +2,7 @@
 #include "P02_PlayerStat.h"
 
 
+
 P02_PlayerStat::P02_PlayerStat()
 {
 	stat._Atk = 10;

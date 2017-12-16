@@ -67,8 +67,6 @@ void P01_LoadingScene::LoadTexture()
 	loading->LoadTexture( _T( "slot" ) , _T( "Texture/P02_UI/invenSlot.png" ) );
 	loading->LoadTexture( _T( "characterInven" ) , _T( "Texture/P01_Inventory/playerUI.png" ) );
 
-	loading->LoadTexture(_T("playerUI"), _T("Texture/P01_Inventory/playerUI.png"));
-
 	loading->LoadTexture(_T("slot0"), _T("Texture/P01_Inventory/slot0.png"));
 	loading->LoadTexture(_T("slot1"), _T("Texture/P01_Inventory/slot1.png"));
 	loading->LoadTexture(_T("slot2"), _T("Texture/P01_Inventory/slot2.png"));
@@ -102,7 +100,11 @@ void P01_LoadingScene::LoadTexture()
 	loading->LoadTexture( _T( "ring" ) , _T( "Texture/P02_ItemIcon/ring.png" ) );
 	loading->LoadTexture( _T( "atifact" ) , _T( "Texture/P02_ItemIcon/atifact.png" ) );
 
-	//=============================================================================
+	//================================= 플레이어 UI==================================
+
+	loading->LoadTexture(_T("playerUI"), _T("Texture/P01_Inventory/playerUI.png"));
+	loading->LoadTexture(_T("platerGauge"), _T("Texture/P02_UI/gauge03.png"));
+	loading->LoadTexture(_T("platerGaugeColor"), _T("Texture/P02_UI/playerGauge01.png"));
 }
 
 

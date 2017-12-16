@@ -154,6 +154,7 @@
     <ClInclude Include="DxTypedef.h" />
     <ClInclude Include="DxUtility.h" />
     <ClInclude Include="GameNode.h" />
+    <ClInclude Include="P01_GaugeBar.h" />
     <ClInclude Include="HJHDirectX.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="MacroFunction.h" />
@@ -202,6 +203,7 @@
     <ClCompile Include="DxGrid.cpp" />
     <ClCompile Include="DxLight.cpp" />
     <ClCompile Include="GameNode.cpp" />
+    <ClCompile Include="P01_GaugeBar.cpp" />
     <ClCompile Include="HJHDirectX.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="MainGame.cpp" />

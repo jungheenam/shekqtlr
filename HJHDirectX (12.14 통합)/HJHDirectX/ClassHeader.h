@@ -42,6 +42,9 @@
 #include "P02_UIButton.h"
 
 #include "P01_StartMenuScene.h"
+ 
+//20171216
+#include "P01_GaugeBar.h"
 
 
 

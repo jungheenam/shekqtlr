@@ -31,6 +31,7 @@ HRESULT P02_UIButtonScene::Init()
 	INVEN->Init();
 	ITEM->Init();
 
+	GAUGE->Init();
 	
 
 	return S_OK;
@@ -67,7 +68,7 @@ void P02_UIButtonScene::Render()
 	CHARUI->Render();
 	INVEN->Render();
 	ITEM->Render();
-
+	GAUGE->Render();
 
 }
 
