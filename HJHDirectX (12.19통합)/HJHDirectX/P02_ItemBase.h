@@ -141,29 +141,29 @@ private:
 };
 
 
-class P01_CharacterUI : public SingletonBase<P01_CharacterUI>
-{
-private:
-
-	vector<tagItem> vItem;
-	vector<tagInventory> vInven;
-
-	bool select;
-
-
-public:
-	P01_CharacterUI() {};
-	~P01_CharacterUI() {};
-
-
-	HRESULT Init();
-	void Release();
-	void Update();
-	void KeyDown();
-	void SetSlot();
-	void ItemMove();
-	void InvenMove();
-	void Render();
-
-	vector<tagInventory> getInventory() { return vInven; }
-};
+//class P01_CharacterUI : public SingletonBase<P01_CharacterUI>
+//{
+//private:
+//
+//	vector<tagItem> vItem;
+//	vector<tagInventory> vInven;
+//
+//	bool select;
+//
+//
+//public:
+//	P01_CharacterUI() {};
+//	~P01_CharacterUI() {};
+//
+//
+//	HRESULT Init();
+//	void Release();
+//	void Update();
+//	void KeyDown();
+//	void SetSlot();
+//	void ItemMove();
+//	void InvenMove();
+//	void Render();
+//
+//	vector<tagInventory> getInventory() { return vInven; }
+//};

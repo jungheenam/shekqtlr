@@ -1,4 +1,6 @@
 #pragma once
+#include "SingletonBase.h"
+
 struct tagCharacterUI
 {
 	Texture* Texture;
@@ -7,7 +9,7 @@ struct tagCharacterUI
 	VEC2 rcSize;
 
 };
-class P01_PlayerEquipment
+class P01_PlayerEquipment : public SingletonBase<P01_PlayerEquipment>
 {
 private:
 

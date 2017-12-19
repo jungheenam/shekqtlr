@@ -1,5 +1,9 @@
 #pragma once
-class P01_Inventory :public GameNode
+#include "SingletonBase.h"
+
+
+
+class P01_Inventory :public SingletonBase<P01_Inventory>
 {
 public:
 	P01_Inventory();

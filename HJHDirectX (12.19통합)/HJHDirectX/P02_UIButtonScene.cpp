@@ -31,7 +31,8 @@ HRESULT P02_UIButtonScene::Init()
 	inven->Init();
 
 	
-	GAUGE->Init();
+	//GAUGE->Init();
+	//QUIPMENT->Init();
 	return S_OK;
 }
 	
@@ -61,6 +62,8 @@ void P02_UIButtonScene::Render()
 	//button2->Render();	
 	GAUGE->Render();
 	inven->Render();
+	QUIPMENT->Render();
+	
 
 
 

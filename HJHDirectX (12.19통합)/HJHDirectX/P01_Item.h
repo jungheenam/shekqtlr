@@ -83,9 +83,38 @@ enum ITEMTYPE
 //};
 
 
-class P01_Item
+class P01_Item 
 {
+private:
+	int _invenScroll;
+	int _invenNum;
+	int _itemNum;
+
+	ITEMTYPE _itemType;
+
+	Texture _invenImg;
+	Texture _itemSelect;
+
+
+	float _x, _y;
+	RECT _rc;
+
+	bool _onInven;
 public:
+	virtual HRESULT Init();
+	virtual void Release();
+	virtual void Update();
+	virtual void Render();
+
+	void itemSelect();
+	void invenSelet();
+	void itemSelectDraw();
+	void invenDraw();
+	void startDraw();
+
+	void invenPick();
+
+
 	P01_Item();
 	~P01_Item();
 

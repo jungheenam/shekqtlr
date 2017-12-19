@@ -103,7 +103,7 @@
     <Filter Include="01. MainGame\02. Hyunsik\04.Progressbar">
       <UniqueIdentifier>{26ee4979-eda3-4adc-a07b-bdc1aadf8769}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01. MainGame\01. Junseo\02.PlayerUI">
+    <Filter Include="01. MainGame\01. Junseo\02.DungeonScene">
       <UniqueIdentifier>{27e5e011-86cc-4c23-8721-29fcb4a24cd4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -259,16 +259,19 @@
       <Filter>01. MainGame\02. Hyunsik\02. Item</Filter>
     </ClInclude>
     <ClInclude Include="P01_GaugeBar.h">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClInclude>
     <ClInclude Include="P01_Inventory.h">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClInclude>
     <ClInclude Include="P01_Item.h">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClInclude>
     <ClInclude Include="P01_PlayerEquipment.h">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
+    </ClInclude>
+    <ClInclude Include="P01_DungeonScene.h">
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -399,16 +402,19 @@
       <Filter>01. MainGame\02. Hyunsik\02. Item</Filter>
     </ClCompile>
     <ClCompile Include="P01_GaugeBar.cpp">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClCompile>
     <ClCompile Include="P01_Inventory.cpp">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClCompile>
     <ClCompile Include="P01_Item.cpp">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClCompile>
     <ClCompile Include="P01_PlayerEquipment.cpp">
-      <Filter>01. MainGame\01. Junseo\02.PlayerUI</Filter>
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
+    </ClCompile>
+    <ClCompile Include="P01_DungeonScene.cpp">
+      <Filter>01. MainGame\01. Junseo\02.DungeonScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

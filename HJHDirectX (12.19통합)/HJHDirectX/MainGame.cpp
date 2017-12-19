@@ -19,6 +19,7 @@ HRESULT MainGame::Init()
 	SCENEM->Add(_T("P02_UIButtonScene"), new P02_UIButtonScene);
 	SCENEM->Add( _T( "P01_StartMenuScene" ) , new P01_StartMenuScene );
 	SCENEM->Add(_T("P01_LoadingScene"), new P01_LoadingScene);
+	SCENEM->Add(_T("P01_DungeonScene"), new P01_DungeonScene);
 	SCENEM->Change(_T("P01_LoadingScene"));
 
 

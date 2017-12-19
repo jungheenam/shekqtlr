@@ -38,17 +38,18 @@
 #include "P00_MultiAnimationScene.h"
 //--------------------------------------------------------------------------------------//
 #include "P02_Inven.h"
+#include "P01_PlayerEquipment.h"
 #include "P02_ItemBase.h"
 #include "P02_UIButton.h"
 
 #include "P01_StartMenuScene.h"
+#include "P01_DungeonScene.h"
 
 //20171216
 #include "P01_GaugeBar.h"
 
 //20171218
 #include "P01_Item.h"
-#include "P01_PlayerEquipment.h"
 
 
 //--------------------------------------------------------------------------------------//

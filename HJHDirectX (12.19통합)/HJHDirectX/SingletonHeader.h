@@ -29,9 +29,16 @@
 #include "P02_ItemBase.h"
 #define ITEM P02_ItemBase::GetSingleton()
 #define INVEN P02_Inventory::GetSingleton()
-#define CHARUI P01_CharacterUI::GetSingleton()
+//#define CHARUI P01_CharacterUI::GetSingleton()
 
 
 //20171216 ΩÃ±€≈Ê √ﬂ∞° ¿Ã¡ÿº≠
 #include "P01_GaugeBar.h"
 #define GAUGE P01_GaugeBar::GetSingleton()
+
+//20171219
+#include "P01_Inventory.h"
+#define INVENTORY  P01_Inventory::GetSingleton()
+
+#include "P01_PlayerEquipment.h"
+#define QUIPMENT P01_PlayerEquipment::GetSingleton()

@@ -177,6 +177,7 @@
     <ClInclude Include="P00_TestXFileInstance.h" />
     <ClInclude Include="P00_TestXFilePure.h" />
     <ClInclude Include="P00_TestXFileScene.h" />
+    <ClInclude Include="P01_DungeonScene.h" />
     <ClInclude Include="P01_GaugeBar.h" />
     <ClInclude Include="P01_Inventory.h" />
     <ClInclude Include="P01_Item.h" />
@@ -229,6 +230,7 @@
     <ClCompile Include="P00_TestXFileInstance.cpp" />
     <ClCompile Include="P00_TestXFilePure.cpp" />
     <ClCompile Include="P00_TestXFileScene.cpp" />
+    <ClCompile Include="P01_DungeonScene.cpp" />
     <ClCompile Include="P01_GaugeBar.cpp" />
     <ClCompile Include="P01_Inventory.cpp" />
     <ClCompile Include="P01_Item.cpp" />
