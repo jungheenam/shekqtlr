@@ -64,7 +64,7 @@ void P01_LoadingScene::LoadTexture()
 
 	//=================================ÀÎº¥=======================================
 
-	loading->LoadTexture( _T( "slot" ) , _T( "Texture/P02_UI/invenSlot.png" ) );
+	loading->LoadTexture( _T( "slot" ) , _T( "Texture/P02_UI/invenSlot1.png" ) );
 	loading->LoadTexture( _T( "characterInven" ) , _T( "Texture/P01_Inventory/playerUI.png" ) );
 
 	loading->LoadTexture(_T("playerUI"), _T("Texture/P01_Inventory/playerUI.png"));
@@ -107,6 +107,9 @@ void P01_LoadingScene::LoadTexture()
 	loading->LoadTexture(_T("playerUI"), _T("Texture/P01_Inventory/playerUI.png"));
 	loading->LoadTexture(_T("playerGauge"), _T("Texture/P02_UI/gauge03.png"));
 	loading->LoadTexture(_T("playerGaugeColor"), _T("Texture/P02_UI/playerGauge01.png"));
+	loading->LoadTexture(_T("playerInven"), _T("Texture/P02_UI/inventory.png"));
+	
+
 }
 
 

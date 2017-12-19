@@ -337,54 +337,54 @@ void P02_ItemBase::ItemToolTip( tagItem* _item )
 
 
 
-void P02_Inventory::Init()
-{
-	this->SetSlot();
-}
-
-void P02_Inventory::Update()
-{
-}
-
-void P02_Inventory::Render()
-{
-	RECT imageSize;
-	SetRect( &imageSize , 0 , 0 , 34 , 34 );
-	for ( int i = 0; i < vInven.size(); ++i )
-	{
-		vInven[ i ].TextureI->Render( &imageSize , &vInven[ i ].rcPosition , NULL , 0.0f
-			, &VEC2( 1.25f , 1.25f ) , D3DXCOLOR( 1.0f , 1.0f , 1.0f , 1.0f ) );
-	}
-}
-
-void P02_Inventory::SetSlot()
-{
-	tagInventory slot[ 16 ];
-	ZeroMemory( slot , sizeof( tagInventory ) );
-	for ( int i = 0; i < 16; ++i ) for ( int x = 0; x < 4; ++x ) for ( int y = 0; y < 4; ++y )
-	{
-		if ( vInven.size() >= 16 ) break;
-
-		slot[ i ].TextureI = TEXTUREM->Find( _T( "slot" ) );
-		slot[ i ].rcPosition = VEC3( 100 + 43 * y , WINSIZEY / 2 + 43 * x , 0 );
-		slot[ i ].rcSize = VEC2( 34 , 34 );
-		SetRect( &slot[ i ].rc , slot[ i ].rcPosition.x , slot[ i ].rcPosition.y ,slot[ i ].rcPosition.x + slot[ i ].rcSize.x * 1.25f , slot[ i ].rcPosition.y + slot[ i ].rcSize.y *1.25f );
-		slot[ i ].isItem = false;
-
-		vInven.push_back( slot[ i ] );
-	}
-}
-
-void P02_Inventory::pushItem( tagInventory* _inven )
-{
-	/*for ( int i = 0; i < vInven.size(); ++i )
-	{
-		if ( vInven[ i ].rcPosition == _inven->rcPosition ) vInven[ i ].isItem = true;
-	}
-	*/
-
-	(*_inven).isItem = true;
-}
+//void P02_Inventory::Init()
+//{
+//	this->SetSlot();
+//}
+//
+//void P02_Inventory::Update()
+//{
+//}
+//
+//void P02_Inventory::Render()
+//{
+//	RECT imageSize;
+//	SetRect( &imageSize , 0 , 0 , 34 , 34 );
+//	for ( int i = 0; i < vInven.size(); ++i )
+//	{
+//		vInven[ i ].TextureI->Render( &imageSize , &vInven[ i ].rcPosition , NULL , 0.0f
+//			, &VEC2( 1.25f , 1.25f ) , D3DXCOLOR( 1.0f , 1.0f , 1.0f , 1.0f ) );
+//	}
+//}
+//
+//void P02_Inventory::SetSlot()
+//{
+//	tagInventory slot[ 16 ];
+//	ZeroMemory( slot , sizeof( tagInventory ) );
+//	for ( int i = 0; i < 16; ++i ) for ( int x = 0; x < 4; ++x ) for ( int y = 0; y < 4; ++y )
+//	{
+//		if ( vInven.size() >= 16 ) break;
+//
+//		slot[ i ].TextureI = TEXTUREM->Find( _T( "slot" ) );
+//		slot[ i ].rcPosition = VEC3( 100 + 43 * y , WINSIZEY / 2 + 43 * x , 0 );
+//		slot[ i ].rcSize = VEC2( 34 , 34 );
+//		SetRect( &slot[ i ].rc , slot[ i ].rcPosition.x , slot[ i ].rcPosition.y ,slot[ i ].rcPosition.x + slot[ i ].rcSize.x * 1.25f , slot[ i ].rcPosition.y + slot[ i ].rcSize.y *1.25f );
+//		slot[ i ].isItem = false;
+//
+//		vInven.push_back( slot[ i ] );
+//	}
+//}
+//
+//void P02_Inventory::pushItem( tagInventory* _inven )
+//{
+//	/*for ( int i = 0; i < vInven.size(); ++i )
+//	{
+//		if ( vInven[ i ].rcPosition == _inven->rcPosition ) vInven[ i ].isItem = true;
+//	}
+//	*/
+//
+//	(*_inven).isItem = true;
+//}
 
 
 

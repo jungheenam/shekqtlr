@@ -19,7 +19,7 @@ enum ITEMKIND
 	ITEMKIND_END
 };
 
-enum INVENTORYSLOT
+enum PLAYERSLOT
 {
 	//SLOT_NONE
 	SLOT_NONE_HELMAT ,
@@ -115,30 +115,30 @@ public:
 	vector<tagItem> getItem() { return vItem; }
 };
 
-
-class P02_Inventory : public SingletonBase<P02_Inventory>
-{
-public:
-	P02_Inventory() {};
-	~P02_Inventory() {};
-
-	void Init();
-	void Update();
-	void Render();
-	void SetSlot();
-
-	void pushItem(tagInventory* _inven);
-	
-	vector<tagItem> vItem;
-	vector<tagInventory> getInventory() { return vInven; }
-	void SetInventoryState( int num , bool state ) { vInven[ num ].isItem = state; }
-
-
-private:
-	vector<tagInventory> vInven;
-
-
-};
+//
+//class P02_Inventory : public SingletonBase<P02_Inventory>
+//{
+//public:
+//	P02_Inventory() {};
+//	~P02_Inventory() {};
+//
+//	void Init();
+//	void Update();
+//	void Render();
+//	void SetSlot();
+//
+//	void pushItem(tagInventory* _inven);
+//	
+//	vector<tagItem> vItem;
+//	vector<tagInventory> getInventory() { return vInven; }
+//	void SetInventoryState( int num , bool state ) { vInven[ num ].isItem = state; }
+//
+//
+//private:
+//	vector<tagInventory> vInven;
+//
+//
+//};
 
 
 //class P01_CharacterUI : public SingletonBase<P01_CharacterUI>

@@ -179,6 +179,9 @@ void P01_PlayerEquipment::SetSlot()
 	slot[13].isItem = false;
 
 	vInven.push_back(slot[13]);
+
+	//소지품 슬롯
+	INVEN->SetSlot();
 }
 
 void P01_PlayerEquipment::ItemMove()
@@ -194,9 +197,20 @@ void P01_PlayerEquipment::InvenMove()
 
 void P01_PlayerEquipment::Render()
 {
+	//캐릭터 장비창
 	RECT rc = { 0,0, 702, 601 };
 	VEC3 pos = VEC3(0, 0, 0);
 	VEC2 scale = VEC2(WINSIZEX / 1024.0f, WINSIZEY / 768.0f);
+
+	//캐릭터 인벤토리
+	RECT rc1 = { 0,0, 254, 313 };
+	VEC3 pos1 = VEC3(720, 25, 0);
+	
+
+	//인벤토리 슬롯
+	RECT rc2 = { 0,0, 46, 46 };
+	VEC3 pos2 = VEC3(720, 25, 0);
+	
 
 	if (select == true)
 	{
@@ -248,7 +262,14 @@ void P01_PlayerEquipment::Render()
 			, &VEC2(1.0f, 1.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
 
 
-		//}
+		//============== 장비창 =================//
+
+		TEXTUREM->Find(_T("playerInven"))->Render(&rc1, &pos1, &VEC2(0, 0), 0.0f, &scale, D3DXCOLOR(1, 1, 1, 1.0f));
+
+		//============== 슬롯 =================//
+
+		TEXTUREM->Find(_T("slot"))->Render(&rc2, &pos2, &VEC2(0, 0), 0.0f, &scale, D3DXCOLOR(1, 1, 1, 1.0f));
+
 	}
 
 }

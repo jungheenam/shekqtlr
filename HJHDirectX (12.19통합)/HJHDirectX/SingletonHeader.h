@@ -28,7 +28,7 @@
 
 #include "P02_ItemBase.h"
 #define ITEM P02_ItemBase::GetSingleton()
-#define INVEN P02_Inventory::GetSingleton()
+//#define INVEN P02_Inventory::GetSingleton()
 //#define CHARUI P01_CharacterUI::GetSingleton()
 
 
@@ -42,3 +42,6 @@
 
 #include "P01_PlayerEquipment.h"
 #define QUIPMENT P01_PlayerEquipment::GetSingleton()
+
+#include "P01_Inventory.h"
+#define INVEN P01_Inventory::GetSingleton()
