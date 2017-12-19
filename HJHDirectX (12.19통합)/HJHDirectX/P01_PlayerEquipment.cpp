@@ -268,8 +268,7 @@ void P01_PlayerEquipment::Render()
 
 		//============== ½½·Ô =================//
 
-		TEXTUREM->Find(_T("slot"))->Render(&rc2, &pos2, &VEC2(0, 0), 0.0f, &scale, D3DXCOLOR(1, 1, 1, 1.0f));
-
+		INVEN->Render();
 	}
 
 }

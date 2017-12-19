@@ -71,20 +71,14 @@ void P01_Inventory::SetSlot()
 		if (vInven.size() >= 16) break;
 
 		slot[i].TextureI = TEXTUREM->Find(_T("slot"));
-		slot[i].rcPosition = VEC3(100 + 43 * y, WINSIZEY / 2 + 43 * x, 0);
+		slot[i].rcPosition = VEC3(757 + 52 * y, 104 + 51 * x, 0);
 		slot[i].rcSize = VEC2(46, 46);
-		SetRect(&slot[i].rc, slot[i].rcPosition.x, slot[i].rcPosition.y, slot[i].rcPosition.x + slot[i].rcSize.x * 1.25f, slot[i].rcPosition.y + slot[i].rcSize.y *1.25f);
+		SetRect(&slot[i].rc, slot[i].rcPosition.x, slot[i].rcPosition.y, slot[i].rcPosition.x + slot[i].rcSize.x * 1.0f, slot[i].rcPosition.y + slot[i].rcSize.y *1.0f);
 		slot[i].isItem = false;
 
 		vInven.push_back(slot[i]);
 
-		/*slot[0].TextureI = TEXTUREM->Find(_T("slot"));
-		slot[0].rcPosition = VEC3(100 + 43 * y, WINSIZEY / 2 + 43 * x, 0);
-		slot[0].rcSize = VEC2(34, 34);
-		SetRect(&slot[0].rc, slot[0].rcPosition.x, slot[0].rcPosition.y, slot[0].rcPosition.x + slot[0].rcSize.x * 1.25f, slot[0].rcPosition.y + slot[0].rcSize.y *1.25f);
-		slot[0].isItem = false;
-
-		vInven.push_back(slot[0]);*/
+		
 
 	}
 }
