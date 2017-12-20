@@ -51,6 +51,8 @@ struct tagInvenInfo
 	RECT	rc;
 
 	bool	bIsItem;
+
+	tagItemInfo* pItem;
 };
 
 struct tagToolTip
@@ -70,16 +72,20 @@ public:
 	void Update();
 	void Render();
 
-	void addItem(int ItemKind ,tstring name , VEC3 pos );
+	void addItem( int ItemKind , tstring name , VEC3 pos );
 	void ItemMove();
-	void InsertItem();
+	void InvenDraw();
+	void SwapItem( VEC3 _item1 , VEC3 _item2 );
+
+	void InsertItem( tagItemInfo* _item , int _invenIndex );
 	void ItemToolTip( tagItemInfo* _item );
 
-	
+
 private:
 	vector<tagItemInfo*> vItem;
 	vector<tagInvenInfo*> vInven;
 	tagItemInfo toolTip;
 	bool select;
+	bool toggleInven;
 };
 
